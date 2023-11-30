@@ -50,9 +50,9 @@ body, html {
     border: none;
     cursor: pointer;
     width: 50%;
-    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    left: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transform: translate(+50%); /* Keskitys */
+    transform: translate(+50%);
     border-radius: 10px;
   }
 
@@ -66,9 +66,9 @@ body, html {
     border: none;
     cursor: pointer;
     width: 50%;
-    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    left: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transform: translate(+50%); /* Keskitys */
+    transform: translate(+50%);
     border-radius: 10px;
   }
   
@@ -106,8 +106,8 @@ body, html {
   .dropdown {
     position: relative;
     display: block;
-    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
-    transform: translate(-50%); /* Keskitys */
+    left: 50%;
+    transform: translate(-50%);
   }
   
   .dropdown-content {
@@ -115,12 +115,12 @@ body, html {
     position: absolute;
     background-color: rgb(255, 255, 255, 0.8);
     width: 50%;
-    max-height: 400px; /* Voit säätää tarpeidesi mukaan */
+    max-height: 400px;
     overflow: auto;
     z-index: 1;
-    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    left: 50%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transform: translate(-50%); /* Keskitys */
+    transform: translate(-50%);
     border-radius: 10px;
   }
   
@@ -175,10 +175,10 @@ body, html {
     padding: 10px;
     position: absolute;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-    opacity: 0; /* Aseta alkutila läpinäkyvänä */
-    transform: translate(0%, 0%) translateY(-20px); /* Alusta laskeutuminen ylhäältä */
-    transition: opacity 1s ease, transform 1s ease; /* Aseta siirtymäominaisuudet */
-    animation: fadeAndSlideDown_header 1s ease-in-out forwards; /* Käynnistä animaatio */
+    opacity: 0; /* Asetetaan alkutila läpinäkyväksi */
+    transform: translate(0%, 0%) translateY(-20px); /* Alustetaan laskeutuminen ylhäältä */
+    transition: opacity 1s ease, transform 1s ease; /* Asetetaan siirtymäominaisuudet */
+    animation: fadeAndSlideDown_header 1s ease-in-out forwards; /* Käynnistetään animaatio */
   }
 
   .logo {
@@ -282,10 +282,10 @@ body, html {
     position: absolute;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-    opacity: 0; /* Aseta alkutila läpinäkyvänä */
-    transform: translate(-50%, -50%) translateY(-20px); /* Alusta laskeutuminen ylhäältä */
-    transition: opacity 1s ease, transform 1s ease; /* Aseta siirtymäominaisuudet */
-    animation: fadeAndSlideDown 1s ease-in-out forwards; /* Käynnistä animaatio */
+    opacity: 0; /* Asetetaan alkutila läpinäkyväksi */
+    transform: translate(-50%, -50%) translateY(-20px); /* Alustetaan laskeutuminen ylhäältä */
+    transition: opacity 1s ease, transform 1s ease; /* Asetetaan siirtymäominaisuudet */
+    animation: fadeAndSlideDown 1s ease-in-out forwards; /* Käynnistetään animaatio */
   }
   
   #summary {
@@ -301,8 +301,8 @@ body, html {
     color: white;
     text-align: center;
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    opacity: 0; /* Aseta alkutila läpinäkyvänä */
-    transform: translate(0%, 0%) translateY(20px); /* Alusta laskeutuminen ylhäältä */
-    transition: opacity 1s ease, transform 1s ease; /* Aseta siirtymäominaisuudet */
-    animation: fadeAndSlideDown_footer 1s ease-in-out forwards; /* Käynnistä animaatio */
+    opacity: 0; /* Asetetaan alkutila läpinäkyväksi */
+    transform: translate(0%, 0%) translateY(20px); /* Alustetaan laskeutuminen ylhäältä */
+    transition: opacity 1s ease, transform 1s ease; /* Asetetaan siirtymäominaisuudet */
+    animation: fadeAndSlideDown_footer 1s ease-in-out forwards; /* Käynnistetään animaatio */
   }
