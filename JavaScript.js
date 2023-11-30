@@ -14,7 +14,7 @@ function checkTime(i) {
   return i;
 }
 
-// Kun käyttäjä klikkaa painiketta, vaihda piilottamisen ja näyttämisen välillä pudotusvalikon sisällössä
+// Kun käyttäjä klikkaa painiketta, vaihdetaan piilottamisen ja näyttämisen välillä pudotusvalikon sisällössä
 function myFunction() {
   const dropdown = document.getElementById("myDropdown");
   dropdown.classList.toggle("show");
