@@ -84,7 +84,7 @@ body, html {
   #myInput {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-image: url('./Kuvat/search-icon-harmaa.png');
+    background-image: url('search-icon-harmaa.png');
     background-color: rgb(255, 255, 255, 0.6);
     background-position: 14px 12px;
     background-repeat: no-repeat;
@@ -155,7 +155,7 @@ body, html {
   }
 
   .bg-image {
-    background-image: url("./Kuvat/SmX.jpg");
+    background-image: url("SmX.jpg");
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
