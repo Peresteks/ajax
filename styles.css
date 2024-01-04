@@ -157,7 +157,7 @@ body, html {
   .bg-image {
     background-image: url("SmX.jpg");
     filter: blur(8px);
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(0px);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
