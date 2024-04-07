@@ -1,0 +1,301 @@
+body {
+  background-image: url("./Kuvat/SmX blurred.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @keyframes fadeAndSlideDown {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(-400px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  @keyframes fadeAndSlideDown_header {
+    0% {
+      opacity: 0;
+      transform: translate(0%, -50%) translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0%, 0%);
+    }
+  }
+
+  @keyframes fadeAndSlideDown_footer {
+    0% {
+      opacity: 0;
+      transform: translate(0%, -50%) translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0%, 0%);
+    }
+  }
+
+  .dropbtn {
+    background-color: rgb(30, 137, 124);
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translate(+50%); /* Keskitys */
+    border-radius: 10px;
+  }
+
+  .hakupainike {
+    background-color: rgb(30, 137, 124);
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translate(+50%); /* Keskitys */
+    border-radius: 10px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(30, 137, 124, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .hakupainike:hover, .hakunappi:focus {
+    background-color: rgb(56, 124, 108);
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-image: url('./Kuvat/search-icon-harmaa.png');
+    background-color: rgb(255, 255, 255, 0.6);
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(30, 137, 124, 0.2);
+    width: 100%;
+  }
+  
+  #myInput:focus {
+    background-color: rgb(255, 255, 255, 0.6);
+    color:rgb(70, 156, 136);
+    box-shadow: 0px 4px 6px rgba(30, 137, 124, 0.8);
+    outline: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: block;
+    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    transform: translate(-50%); /* Keskitys */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.8);
+    width: 50%;
+    max-height: 300px; /* Voit säätää tarpeidesi mukaan */
+    overflow: auto;
+    z-index: 1;
+    left: 50%; /* Sijoitetaan vasen reuna 50% leveydelle */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%); /* Keskitys */
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(30, 137, 124);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(30, 137, 124, 0.4);
+  }
+  
+  .dropdown a:hover {
+    background-color: rgba(30, 137, 124, 0.8);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .show {
+    display: block;
+    height: 400px;
+  }
+  
+  #clock {
+    color: rgb(30, 137, 124);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    background-color: rgb(30, 137, 124);
+    left: 0;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    opacity: 0; /* Aseta alkutila läpinäkyvänä */
+    transform: translate(0%, 0%) translateY(-20px); /* Alusta laskeutuminen ylhäältä */
+    transition: opacity 1s ease, transform 1s ease; /* Aseta siirtymäominaisuudet */
+    animation: fadeAndSlideDown_header 1s ease-in-out forwards; /* Käynnistä animaatio */
+  }
+
+  .logo {
+    height: 60px;
+    left: 50%;
+    top: 15px;
+    position: absolute;
+    transform: translate(-390%);
+  }
+
+  .logo-linkki:link, .logo-linkki:visited {
+    background-color: none;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    left: 50%;
+    top: 15px;
+    position: absolute;
+    transform: translate(-390%);
+  }
+
+  .vr-linkki:link, .vr-linkki:visited {
+    background-color: none;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+  }
+
+  .fintraffic-linkki:link, .fintraffic-linkki:visited {
+    background-color: none;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    height: 50px;
+    width: 80px;
+    right: 150px;
+    top: 20px;
+    position: absolute;
+  }
+
+  .footer-linkki:link, .footer-linkki:visited {
+    background-color: none;
+    color: white;
+    text-decoration: none;
+  }
+
+  .logo-linkki:hover, .logo-linkki:active {
+    background-color: rgba(30, 137, 124, 0.5);
+  }
+
+  .vr-linkki:hover, .vr-linkki:active {
+    background-color: rgba(30, 137, 124, 0.5);
+  }
+
+  .fintraffic-linkki:hover, .fintraffic-linkki:active {
+    background-color: rgba(30, 137, 124, 0.5);
+  }
+
+  .footer-linkki:hover, .footer-linkki:visited {
+    background-color: none;
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .vr-logo {
+    height: 50px;
+    right: 30px;
+    top: 20px;
+    position: absolute;
+  }
+
+  .fintraffic-logo {
+    height: 70px;
+    right: 150px;
+    top: 10px;
+    position: absolute;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #train-dropdown {
+    background-color : rgba(255, 255, 255, 0.6);
+    color: rgb(30, 137, 124);
+    top: 20%;
+    left: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    opacity: 0; /* Aseta alkutila läpinäkyvänä */
+    transform: translate(-50%, -50%) translateY(-20px); /* Alusta laskeutuminen ylhäältä */
+    transition: opacity 1s ease, transform 1s ease; /* Aseta siirtymäominaisuudet */
+    animation: fadeAndSlideDown 1s ease-in-out forwards; /* Käynnistä animaatio */
+  }
+  
+  #summary {
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Aseta alkutila läpinäkyvänä */
+    transform: translate(0%, 0%) translateY(20px); /* Alusta laskeutuminen ylhäältä */
+    transition: opacity 1s ease, transform 1s ease; /* Aseta siirtymäominaisuudet */
+    animation: fadeAndSlideDown_footer 1s ease-in-out forwards; /* Käynnistä animaatio */
+  }
